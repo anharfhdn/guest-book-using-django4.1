@@ -15,7 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from tamu import views 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    
+    path('reqtamu', views.reqtamu),
+    path('show', views.show),
+    path('edit', views.edit),
+    path('update', views.update),
+    path('delete', views.delete),
 ]
