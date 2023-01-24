@@ -1,0 +1,38 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>Guest Records</title>  
+     {% load static %}  
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>  
+</head>  
+<body>  
+    <h1>Guest Book</h1><br>
+<table class="table table-striped table-bordered table-sm">  
+    <thead class="thead-dark">  
+    <tr>  
+        <th>ID</th>  
+        <th>Guest Name</th>  
+        <th>Message</th>  
+        <th>Actions</th>  
+    </tr>  
+    </thead>  
+    <tbody>  
+{% for showtamu in show_tamu %}  
+    <tr>  
+        <td>{{ showtamu.id }}</td>  
+        <td>{{ showtamu.name }}</td>  
+        <td>{{ showtamu.message }}</td>  
+        <td>  
+            <a href="/edit/{{ showtamu.id }}"><span class="glyphicon glyphicon-pencil" >Edit</span></a>  
+            <a href="/delete/{{ showtamu.id }}">Delete</a>  
+        </td>  
+    </tr>  
+{% endfor %}  
+    </tbody>  
+</table>  
+<br>  
+<br>  
+<center><a href="/reqtamu" class="btn btn-primary">Add New Guest</a></center>  
+</body>  
+</html> 
