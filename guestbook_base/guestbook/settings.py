@@ -80,14 +80,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
-    # 'default':{
-    #     'ENGINE':'django.db.backends.mysql',
-    #     'NAME':'guestbook_databases',
-    #     'USER':'root',
-    #     'PASSWORD':'',
-    #     'HOST':'localhost',
-    #     'PORT':3306
-    # }
+ 
 }
 
 
@@ -128,11 +121,6 @@ DATETIME_FORMAT = '%d-%m-%Y %H:%M'
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
-
-# STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR, 'static'),
-# ]
-
 
 
 # Default primary key field type
