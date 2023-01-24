@@ -1,5 +1,5 @@
 
-<html>  
+<!DOCTYPE html>  
 <html lang="en">  
 <head>  
     <meta charset="UTF-8">  
@@ -8,21 +8,20 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>    
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
-
     
     </head>  
 <body>  
 <form method="POST" class="post-form" action="/update/{{tamu.id}}">  
         {% csrf_token %}  
     <div class="container">  
-<br>  
-    <div class="form-group row">  
-    <label class="col-sm-1 col-form-label"></label>  
-    <div class="col-sm-4">  
-      <h1><strong>Update Details</strong></h1>
-      <br> 
+      <br>  
+      <div class="form-group row">  
+      <label class="col-sm-1 col-form-label"></label>  
+      <div class="col-sm-4">  
+        <h1><strong>Update Details</strong></h1>
+        <br> 
+      </div>  
     </div>  
-  </div>  
                             
   <div class="form-group row">  
     <label class="col-sm-2 col-form-label">Guest Name:</label>  
@@ -35,15 +34,15 @@
     <div class="col-sm-4">  
         <input type="text" name="message" id="message" required maxlength="254" value="{{ tamu.message }}" />  
     </div>  
-
   </div>    
-    <div class="form-group row">  
+
+  <div class="form-group row">  
     <label class="col-sm-1 col-form-label"></label>  
     <div class="col-sm-4">  
     <button type="submit" class="btn btn-success">Update</button>  
     </div>  
-  </div>  
     </div>  
+  </div>  
 </form>  
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
