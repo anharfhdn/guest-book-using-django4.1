@@ -1,2 +1,0 @@
-
-Jalankan virtual environment:
