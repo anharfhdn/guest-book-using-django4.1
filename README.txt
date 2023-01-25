@@ -33,3 +33,5 @@ How to run:
 11. To stop the server -> CTRL+C in cmd 
 
 12. To exit virtual environment, stop the server first and type type -> deactivate
+
+13. Thank you
